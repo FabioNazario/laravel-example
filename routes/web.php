@@ -16,3 +16,7 @@ Route::get('/', function () {
 });
 
 Route::resource('products', 'ProductController');
+
+Route::get('/photos/create', 'PhotoController@create');
+
+Route::post('/photos', 'PhotoController@store');
